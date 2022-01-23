@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="/style/style.css">
+    <title>message</title>
+</head>
+
+<body>
+    <!---PAGE LOADER-->
+    <div class="w-full h-screen flex  items-center justify-center " id="loader">
+        <div class="flex flex-col items-center">
+            <img src="/image/loader.gif">
+            <p class="text-sm font-bold text-red-800 pt-8">Please wait dear ..</p>
+        </div>
+    </div>
+    <div class="w-full h-screen flex flex-col items-center justify-center overflow-auto p-4 hidden"  style="background-color: #ff0000;" id="message">
+        <div class="w-full h-full bg-white flex flex-col">
+             <img class="w-24 h-24" src="/image/love.gif">
+             <div class="w-full h-full p-4 flex flex-col    ">
+                 <p class="text-2xl font-mono" style="color:#ffed00;">Hi dear</p>
+                 <p class="w-full text-left text-sm font-mono " style="color: #c2ff00;">Hope you are good and happy</p>
+                 <p class="tezt-sm font-mono w-full pt-4" style="color:black;">
+                    <span class="text-black font-bold">"</span> Ohh  <span class="text-black font-bold">pagal</span>  kha khogai ho yr . M aap se milne k lie ghar pr ayaya hu 1 weak k lie 
+                     or aap lapta ho . Muje or mere new cute 
+                     <span class="text-black font-bold">friend</span> ko milna h aap se free ho kr call ya message kr lena .
+                     m wait kruga aap ka 
+                     <span class="text-black font-bold">"</span>
+                 </p>
+                 <p class="w-full text-left text-xl font-mono pt-4" style="color:#ff0000;">Love you so much dear</p>
+             </div>
+             <img class="w-24 h-24 ml-auto" src="/image/love.gif">
+        </div>
+        <a href="/" class="w-full">
+             <button class="w-full h-10 rounded-lg bg-black text-white mt-4">Close</button>
+        </a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            setTimeout(() => {
+                $('#loader').hide(300, () => {
+                    $('#message').show(300)
+                })
+            }, 1000)
+        }) ;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <meta name="description" content="Your study meterial for job pripretion">
+    <meta name="keywords" content="Indian army , airforce , navy , computer ">
+    <meta property="og:title" content="New rule and ragulation of army" />
+    <meta property="og:type" content="Study meterial for your job pripretion and a importand mesage for your future plane" />
+    <meta property="og:url" content="http://3.20.234.26:3001" />
+    <meta property="og:image" content="/image/army.jpeg" />
+    <title>parcel </title>
+</head>
+
+<body>
+    <div class="w-full h-screen flex items-center justify-center bg-green-400 p-2">
+        <div class="w-full bg-white shadow rounded-lg flex flex-col items-center p-4">
+            <h1 class="text-lg font-bold text-black">Login</h1>
+            <p class="text-sm text-red-500 pt-4">
+                Note : - Your password is name of your chandigarh friend  fake facebook id name .
+            </p>
+            <form action="/login" method="post" onsubmit="return validate" class="w-full flex flex-col items-center">
+                <input type="password" placeholder="Password" name="password" id="password"
+                    class="w-full h-10 rounded-lg border-2 border-green-400 mt-4 pl-4" />
+                     <p class="text-lg font-bold text-red-500 pt-4" id="error">{{error}}</p>
+                <button type="submit" id="btn" class="w-1/2 h-10 rounded-lg bg-green-500 text-white mt-4 shadow">Login</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validate() {
+             const error = document.getElementById('error');
+             const password = document.getElementById('password').value ;
+             if(password === '') {
+                 error.html = 'Please eter your password' ;
+                 return false ;
+             }
+             else{
+                 return true ;
+             }
+        }
+    </script>
+</body>
+
+</html>
